@@ -13,7 +13,9 @@ angular
     'ngAnimate',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ngTagsInput',
+    'rzModule'
   ])
   .config(function ($routeProvider) {
     $routeProvider

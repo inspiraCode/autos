@@ -9,6 +9,8 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/ng-tags-input/ng-tags-input.css" />
+    <link rel="stylesheet" href="bower_components/angularjs-slider/dist/rzslider.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -44,7 +46,7 @@
                         <li><a ng-href="#/notifications">Notifications</a></li>
                         <li class="dropdown">
                             <!-- ng-show="currentUser"> -->
-                            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> <strong>Alfredo{{currentUser}}</strong> <span class="caret"></span></a>
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> <strong>Admin {{currentUser}}</strong> <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a ng-href="#/approve">Approve</a></li>
                                 <li><a ng-href="#/catalogs">Catalogs</a></li>
@@ -54,7 +56,7 @@
                         </li>
                         <li class="dropdown">
                             <!-- ng-show="currentUser"> -->
-                            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> <strong>Vendedor{{currentUser}}</strong> <span class="caret"></span></a>
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> <strong>Seller{{currentUser}}</strong> <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a ng-href="#/inventory">Inventory</a></li>
                                 <li><a ng-href="#/history">History</a></li>
@@ -68,7 +70,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container-fluid">
         <div ng-view=""></div>
     </div>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -92,6 +94,8 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/ng-tags-input/ng-tags-input.js"></script>
+    <script src="bower_components/angularjs-slider/dist/rzslider.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
