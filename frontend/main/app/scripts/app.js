@@ -15,7 +15,8 @@ angular
     'ngSanitize',
     'ngTouch',
     'ngTagsInput',
-    'rzModule'
+    'rzModule',
+    'ngActivityIndicator'
   ])
   .config(function ($routeProvider) {
     $routeProvider

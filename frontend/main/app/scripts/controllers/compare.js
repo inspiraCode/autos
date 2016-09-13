@@ -7,11 +7,8 @@
  * # CompareCtrl
  * Controller of the autosApp
  */
-angular.module('autosApp')
-  .controller('CompareCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+angular.module('autosApp').controller('CompareCtrl', function($scope, $http) {
+    $http.get('sample/autos.json').then(function(data) {
+        $scope.baseList = data.data.slice(0, 5);
+    });
+});
