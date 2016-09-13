@@ -1,7 +1,7 @@
 <div class="SideNav">
     <form>
-        <div class="form-group">
-            <span ng-click="toggleSideNav()" class="glyphicon glyphicon-remove ToggleSideNavBtn"></span>
+        <span ng-click="toggleSideNav()" class="glyphicon glyphicon-remove ToggleSideNavBtn"></span>
+        <div class="form-group" ng-show="isSideNavOpen">
             <label>Price</label>
             <rzslider rz-slider-model="priceSlider"></rzslider>
             <br>

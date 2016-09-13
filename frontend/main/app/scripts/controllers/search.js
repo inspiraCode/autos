@@ -67,21 +67,20 @@ angular.module('autosApp').controller('SearchCtrl', function($scope, $http, $tim
 
     $scope.toggleSideNav = function() {
         if ($scope.isSideNavOpen) {
-            angular.element('.SideNav').width(300);
-            angular.element('.Main').css('margin-left', 300);
-            $timeout(function() {
-                $scope.isSideNavOpen = false;
-                angular.element('.ToggleSideNavBtn').removeClass('glyphicon-arrow-right');
-                angular.element('.ToggleSideNavBtn').addClass('glyphicon-remove');
-            }, 200);
-
-        } else {
             angular.element('.SideNav').width(70);
             angular.element('.Main').css('margin-left', 70);
             $timeout(function() {
-                $scope.isSideNavOpen = true;
+                $scope.isSideNavOpen = false;
                 angular.element('.ToggleSideNavBtn').addClass('glyphicon-arrow-right');
                 angular.element('.ToggleSideNavBtn').removeClass('glyphicon-remove');
+            }, 200);
+        } else {
+            angular.element('.SideNav').width(300);
+            angular.element('.Main').css('margin-left', 300);
+            $timeout(function() {
+                $scope.isSideNavOpen = true;
+                angular.element('.ToggleSideNavBtn').removeClass('glyphicon-arrow-right');
+                angular.element('.ToggleSideNavBtn').addClass('glyphicon-remove');
             }, 200);
         }
     };

@@ -1,1 +1,52 @@
-<p>This is the profile view.</p>
+<div class="container" style="max-width: 600px;" ng-init="profileTab='Contact'">
+    <div class="col-sm-3">
+        <ul class="nav nav-pills nav-stacked">
+            <li ng-class="{active:profileTab=='Contact'}"><a href="" ng-click="profileTab='Contact'" style="text-align:right;">Contact</a></li>
+            <li ng-class="{active:profileTab=='Account'}"><a href="" ng-click="profileTab='Account'" style="text-align:right;">Account</a></li>
+        </ul>
+    </div>
+    <div class="col-sm-9">
+        <form role="form" ng-show="profileTab=='Contact'">
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" class="form-control" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label>Display Name (Short Alias)</label>
+                <input type="text" class="form-control" placeholder="Display Name">
+            </div>
+            <div class="form-group">
+                <label>Contact Person</label>
+                <input type="text" class="form-control" placeholder="Contact">
+            </div>
+            <div class="form-group">
+                <label>Phone</label>
+                <input type="text" class="form-control" placeholder="Phone">
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label>Address</label>
+                <textarea rows="3" class="form-control" placeholder="Address"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary pull-right">Save</button>
+        </form>
+        <form role="form" ng-show="profileTab=='Account'">
+            <div class="form-group">
+                <label>User Name</label>
+                <p class="form-control-static">User Name</p>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-control" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label>Confirm Password</label>
+                <input type="password" class="form-control" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary pull-right">Change Password</button>
+        </form>
+    </div>
+</div>
