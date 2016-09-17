@@ -9,6 +9,18 @@
  */
 angular.module('autosApp').controller('SearchCtrl', function($scope, $http, $timeout) {
 
+    $scope.search = {
+        minValue: 0,
+        maxValue: 9,
+        yearMin: 1970,
+        yearMax: 2017,
+        options: {
+            floor: 0,
+            ceil: 100,
+            step: 1
+        }
+    };
+
     var autosToAdd = [];
     $scope.baseList = [];
 

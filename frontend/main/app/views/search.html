@@ -3,11 +3,11 @@
         <span ng-click="toggleSideNav()" class="glyphicon glyphicon-remove ToggleSideNavBtn"></span>
         <div class="form-group" ng-show="isSideNavOpen">
             <label>Price</label>
-            <rzslider rz-slider-model="priceSlider"></rzslider>
+            <rzslider rz-slider-model="search.minValue" rz-slider-high="search.maxValue" rz-slider-options="search.options"></rzslider>
             <br>
             <br>
             <label>Years</label>
-            <rzslider rz-slider-model="Years"></rzslider>
+            <!-- <rzslider rz-slider-model="search.yearMin" rz-slider-high="search.yearMax" rz-slider-options="{floor:1970, ceil:2017}"></rzslider> -->
             <br>
             <br>
             <label>Region</label>
