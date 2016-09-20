@@ -1,0 +1,26 @@
+Autos TODO:
+
+  Seller/Inventory:
+    ☐ Campo para informar las notificaciones por auto.
+    ☐ Poner boton para abrir proceso de nuevo auto.
+    ☐ CBO para cambiar el estatus del auto: Venta, Vendido, y uno mas cuando el auto es de nuevo ingreso: "En espera de Aprobacion!".
+    ☐ Formulario para eviar sujerencias. o pedir ayuda!.
+  
+  Admin/Approve:
+    ☐ Listado de articulos para su inspeccion y aprobacion
+    ☐ Campos de: Foto principal, galeria de fotos, texto redactado por vendedor, el pago, y principales propiedades del articulo"Autos".
+    ☐ Listado de articulos "Autos" aprobados por el usuario -'Approbed'.
+    ☐ Campo para mostrar la cantidad de notificaciones pendientes por aprobar.
+  
+  Admin/Catalogs:
+    ☐ Catalogo de Marcar, Modelos, Lineas, etc.
+
+  Campos Detalle del Auto:
+    Campos Obligatorios:
+      ☐ Marca, Modelo, Año, Numero de Cilindros, Capacidad de Motor, Tipo de Conbustible, Tipo de Transmicion, Serie, Region, Precio.
+      ☐ Campo para que el vendedor ponga su estrategia de venta.
+      ☐ Forma de contacto con informacion del vendedor cel, correo, Otro.
+
+    Campos No Obligatorios:
+      ☐ Tamaño de llantas, Tipo de Rines, Quemacocos, Tapetes, CD-DVD Player, Numero de puertas, color exterior e interior - 'Esta informacion es importante, pero se ve en las fotos del auto', Condiciones del auto.
+      
