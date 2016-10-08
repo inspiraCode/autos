@@ -1,0 +1,109 @@
+Entities:
+  auto:
+    Required:
+      ☐ autoKey
+      ☐ brand (Catalog)
+      ☐ line (Catalog)
+      ☐ model (Catalog)
+      ☐ price
+      ☐ region (Catalog)
+      ☐ cilindersQty
+      ☐ motorCapacity (Catalog)
+      ☐ fuelType (Catalog)
+      ☐ transmission (Catalog)
+      ☐ serialNumber
+    Optional:
+      ☐ tiresSize
+      ☐ wheelsType (Catalog)
+      ☐ sunroof
+      ☐ mat
+      ☐ radioType (Catalog)
+      ☐ doorsQty
+      ☐ colorExterior
+      ☐ colorInterior
+      ☐ conditions
+  
+  dealer:
+    Required:
+      ☐ dealerKey
+      ☐ dealerName
+      ☐ displayName
+    Optional:
+      ☐ logo
+  
+  dealerOffice:
+    Required:
+      ☐ dealerOfficeKey
+      ☐ mapLocation
+    Optional:
+      ☐ officePhone
+      ☐ address
+      ☐ addressTwo
+      ☐ zip
+      ☐ city
+      ☐ state
+      ☐ country
+
+  dealerEmploee:
+    Required:
+      ☐ dealerEmploeeKey
+      ☐ emploeeName
+      ☐ phoneOne
+      ☐ emailOne
+    Optional:
+      ☐ phoneTwo
+      ☐ emailTwo
+      ☐ department
+  
+  customer:
+    Required:
+      ☐ customerKey
+      ☐ customerName
+    Optional:
+      ☐ phoneOne
+      ☐ phoneTwo
+      ☐ emailOne
+      ☐ emailTwo
+  
+  user:
+    Required:
+      ☐ userKey
+      ☐ userName
+      ☐ displayName
+      ☐ role
+      ☐ password
+      ☐ 
+    Optional:
+      ☐ avatar
+      ☐ 
+  
+  userProfile:
+    Required:
+    Optional:
+  
+  inventory:
+    Required:
+    Optional:
+  
+  notification:
+    Required:
+    Optional:
+  
+  salesHistory:
+    Required:
+    Optional:
+  
+  
+
+
+Catalogs:
+  auto:
+    ☐ cat_brand
+    ☐ cat_line
+    ☐ cat_model
+    ☐ cat_region
+    ☐ cat_motorCapacity
+    ☐ cat_fuelType
+    ☐ cat_transmission
+    ☐ cat_wheelsType
+    ☐ cat_radioType
