@@ -38,7 +38,7 @@
     <h2>Search</h2>
     <div infinite-scroll="retrieveData()" infinite-scroll-distance="2">
         <div class="row">
-            <div class="col-sm-4 col-lg-3 fx-zoom-down fx-speed-500" ng-repeat="entity in baseList track by entity._id">
+            <div class="col-sm-4 col-lg-4 fx-zoom-down fx-speed-500" ng-repeat="entity in baseList track by entity._id">
                 <div class="list-group" ng-click="openEntity(entity);">
                     <div class="list-group-item">
                         <form role="form">
@@ -47,6 +47,9 @@
                                 <label>Compare
                                     <input type="checkbox" style="position:absolute;top:-4px;right:2px;width:20px;height:20px;" class="form-control" ng-click="entity.compare">
                                 </label>
+                            </div>
+                            <div class="form-group">
+                                <div class="well" style="height:150px;margin-top:10px;"></div>
                             </div>
                             <div class="form-group">
                                 <label>Brand</label>
@@ -61,8 +64,12 @@
                                 <p class="form-control-static">{{entity.model}}</p>
                             </div>
                             <div class="form-group">
-                                <label>Serial Number</label>
-                                <p class="form-control-static">{{entity.serialNumber}}</p>
+                                <label>Price</label>
+                                <p class="form-control-static">$ {{entity.price | number:2}}</p>
+                            </div>
+                            <div class="form-group">
+                                <label>Region</label>
+                                <p class="form-control-static">{{entity.region}}</p>
                             </div>
                         </form>
                     </div>
