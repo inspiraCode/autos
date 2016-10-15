@@ -1,27 +1,27 @@
 Entities:
   auto:
     Required:
-      ☐ autoKey
+      ✔ autoKey @done (16-10-15 17:45)
       ☐ brand (Catalog)
       ☐ line (Catalog)
       ☐ model (Catalog)
-      ☐ price
+      ✔ price @done (16-10-15 17:45)
       ☐ region (Catalog)
-      ☐ cilindersQty
+      ✔ cilindersQty @done (16-10-15 17:45)
       ☐ motorCapacity (Catalog)
       ☐ fuelType (Catalog)
       ☐ transmission (Catalog)
-      ☐ serialNumber
+      ✔ serialNumber @done (16-10-15 17:45)
     Optional:
-      ☐ tiresSize
+      ✔ tiresSize @done (16-10-15 17:45)
       ☐ wheelsType (Catalog)
-      ☐ sunroof
-      ☐ mat
+      ✔ sunroof @done (16-10-15 17:45)
+      ✔ mat @done (16-10-15 17:45)
       ☐ radioType (Catalog)
-      ☐ doorsQty
-      ☐ colorExterior
-      ☐ colorInterior
-      ☐ conditions
+      ✔ doorsQty @done (16-10-15 17:45)
+      ✔ colorExterior @done (16-10-15 17:45)
+      ✔ colorInterior @done (16-10-15 17:45)
+      ✔ conditions @done (16-10-15 17:45)
   
   dealer:
     Required:
@@ -72,31 +72,26 @@ Entities:
       ☐ displayName
       ☐ role
       ☐ password
-      ☐ 
+      ☐ email
     Optional:
-      ☐ avatar
-      ☐ 
   
   userProfile:
     Required:
+      ☐ userProfileKey
+      ☐ avatar
     Optional:
   
   inventory:
     Required:
+      ☐ inventoryKey
+      ☐ auto
+      ☐ status (catalog)
     Optional:
-  
-  notification:
-    Required:
-    Optional:
-  
-  salesHistory:
-    Required:
-    Optional:
-  
+      ☐ seller
+      ☐ customer
   
 
-
-Catalogs:
+Dropdowns:
   auto:
     ☐ cat_brand
     ☐ cat_line
@@ -107,3 +102,5 @@ Catalogs:
     ☐ cat_transmission
     ☐ cat_wheelsType
     ☐ cat_radioType
+  inventory:
+    ☐ cat_inventory_status
