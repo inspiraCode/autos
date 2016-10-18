@@ -7,8 +7,18 @@
 
 module.exports = {
 
-  attributes: {
+    attributes: {
 
-  }
+        userProfileKey: {
+            type: 'integer',
+            autoIncrement: true,
+            unique: true,
+            primaryKey: true
+        },
+
+        avatarURL: {
+            type: 'string'
+        }
+
+    }
 };
-
