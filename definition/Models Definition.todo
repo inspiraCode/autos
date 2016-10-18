@@ -94,13 +94,13 @@ Entities:
 Dropdowns:
   auto:
     ✔ cat_brand @done (16-10-17 20:53)
-    ☐ cat_line
+    ✔ cat_fuelType @done (16-10-17 20:55)
+    ✔ cat_line @done (16-10-17 20:52)
     ✔ cat_model @done (16-10-17 20:55)
-    ☐ cat_region
     ✔ cat_motorCapacity @done (16-10-17 20:55)
-    ☐ cat_fuelType
-    ✔ cat_transmission @done (16-10-17 20:56)
-    ☐ cat_wheelsType
     ✔ cat_radioType @done (16-10-17 20:57)
+    ✔ cat_region @done (16-10-17 20:54)
+    ✔ cat_transmission @done (16-10-17 20:56)
+    ✔ cat_wheelsType @done (16-10-17 20:56)
   inventory:
-    ☐ cat_inventory_status
+    ✔ cat_inventory_status @done (16-10-17 20:57)

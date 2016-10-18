@@ -7,8 +7,20 @@
 
 module.exports = {
 
-  attributes: {
+    attributes: {
+    	
+    	fuelTypeKey: {
+    		type:'integer',
+    		autoIncrement: true,
+    		unique: true,
+    		primaryKey: true
+    	},
 
-  }
+		value: {
+			type: 'string',
+			required: true
+		}
+
+
+    }
 };
-

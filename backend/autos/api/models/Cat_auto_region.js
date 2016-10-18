@@ -7,8 +7,19 @@
 
 module.exports = {
 
-  attributes: {
+    attributes: {
 
-  }
+    	regionKey: {
+    		type:'integer',
+    		autoIncrement: true,
+    		unique: true,
+    		primaryKey: true
+    	},
+
+		value: {
+			type: 'string',
+			required: true
+		}
+
+    }
 };
-
