@@ -7,8 +7,38 @@
 
 module.exports = {
 
-  attributes: {
+    attributes: {
 
-  }
+        userKey: {
+            type: 'integer',
+            autoIncrement: true,
+            unique: true,
+            primaryKey: true
+        },
+
+        userName: {
+            type: 'string',
+            required: true
+        },
+
+        displayName: {
+            type: 'string'
+        },
+
+        role: {
+            type: 'string',
+            required: true
+        },
+
+        password: {
+            type: 'string',
+            required: true
+        },
+
+        email: {
+            type: 'string',
+            required: true
+        }
+
+    }
 };
-

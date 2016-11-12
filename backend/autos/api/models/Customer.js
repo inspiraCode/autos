@@ -7,8 +7,35 @@
 
 module.exports = {
 
-  attributes: {
+    attributes: {
 
-  }
+        customerKey: {
+            type: 'integer',
+            autoIncrement: true,
+            unique: true,
+            primaryKey: true
+        },
+
+        customerName: {
+            type: 'string',
+            required: true
+        },
+
+        phoneOne: {
+            type: 'string'
+        },
+
+        phoneTwo: {
+            type: 'string'
+        },
+
+        emailOne: {
+            type: 'string'
+        },
+
+        emailTwo: {
+            type: 'string'
+        }
+
+    }
 };
-

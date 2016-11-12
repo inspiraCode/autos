@@ -9,17 +9,17 @@ module.exports = {
 
     attributes: {
 
-    	regionKey: {
-    		type:'integer',
-    		autoIncrement: true,
-    		unique: true,
-    		primaryKey: true
-    	},
+        regionKey: {
+            type: 'integer',
+            autoIncrement: true,
+            unique: true,
+            primaryKey: true
+        },
 
-		value: {
-			type: 'string',
-			required: true
-		}
+        value: {
+            type: 'string',
+            required: true
+        }
 
     }
 };

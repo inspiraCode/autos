@@ -25,54 +25,54 @@ Entities:
   
   dealer:
     Required:
-      ☐ dealerKey
-      ☐ dealerName
-      ☐ displayName
+      ✔ dealerKey @done (16-10-17 21:31)
+      ✔ dealerName @done (16-10-17 21:31)
+      ✔ displayName @done (16-10-17 21:31)
     Optional:
-      ☐ logo
+      ✔ logo @done (16-10-17 21:31)
   
   dealerOffice:
     Required:
-      ☐ dealerOfficeKey
-      ☐ mapLocation
+      ✔ dealerOfficeKey @done (16-10-17 21:31)
+      ✔ mapLocation @done (16-10-17 21:33)
     Optional:
-      ☐ officePhone
-      ☐ address
-      ☐ addressTwo
-      ☐ zip
-      ☐ city
-      ☐ state
-      ☐ country
+      ✔ officePhone @done (16-10-17 21:33)
+      ✔ address @done (16-10-17 21:33)
+      ✔ addressTwo @done (16-10-17 21:33)
+      ✔ zip @done (16-10-17 21:33)
+      ✔ city @done (16-10-17 21:33)
+      ✔ state @done (16-10-17 21:33)
+      ✔ country @done (16-10-17 21:33)
 
   dealerEmploee:
     Required:
-      ☐ dealerEmploeeKey
-      ☐ emploeeName
-      ☐ phoneOne
-      ☐ emailOne
+      ✔ dealerEmploeeKey @done (16-10-17 21:35)
+      ✔ emploeeName @done (16-10-17 21:35)
+      ✔ phoneOne @done (16-10-17 21:35)
+      ✔ emailOne @done (16-10-17 21:35)
     Optional:
-      ☐ phoneTwo
-      ☐ emailTwo
-      ☐ department
+      ✔ phoneTwo @done (16-10-17 21:35)
+      ✔ emailTwo @done (16-10-17 21:35)
+      ✔ department @done (16-10-17 21:35)
   
   customer:
     Required:
-      ☐ customerKey
-      ☐ customerName
+      ✔ customerKey @done (16-10-17 21:28)
+      ✔ customerName @done (16-10-17 21:28)
     Optional:
-      ☐ phoneOne
-      ☐ phoneTwo
-      ☐ emailOne
-      ☐ emailTwo
+      ✔ phoneOne @done (16-10-17 21:28)
+      ✔ phoneTwo @done (16-10-17 21:28)
+      ✔ emailOne @done (16-10-17 21:28)
+      ✔ emailTwo @done (16-10-17 21:28)
   
   user:
     Required:
-      ☐ userKey
-      ☐ userName
-      ☐ displayName
-      ☐ role
-      ☐ password
-      ☐ email
+      ✔ userKey @done (16-10-17 21:20)
+      ✔ userName @done (16-10-17 21:20)
+      ✔ displayName @done (16-10-17 21:20)
+      ✔ role @done (16-10-17 21:20)
+      ✔ password @done (16-10-17 21:20)
+      ✔ email @done (16-10-17 21:20)
     Optional:
   
   userProfile:

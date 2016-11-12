@@ -7,8 +7,58 @@
 
 module.exports = {
 
-  attributes: {
+    attributes: {
 
-  }
+        dealerOfficeKey: {
+            type: 'integer',
+            autoIncrement: true,
+            unique: true,
+            primaryKey: true
+        },
+
+        mapLocation: {
+            type: 'string',
+            required: true
+        },
+
+        officePhone: {
+            type: 'string'
+        },
+
+        address: {
+            type: 'string'
+        },
+
+        addressTwo: {
+            type: 'string'
+        },
+
+        zip: {
+            type: 'string'
+        },
+
+        city: {
+            type: 'string'
+        },
+
+        state: {
+            type: 'string'
+        },
+
+        country: {
+            type: 'string'
+        },
+
+        //Associations:
+        dealer: {
+        	model: 'dealer',
+        	via: 'offices'
+        },
+
+        emploees: {
+            collection: 'dealerEmploee',
+            via: 'offices'
+        }
+
+    }
 };
-

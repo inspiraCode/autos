@@ -9,17 +9,17 @@ module.exports = {
 
     attributes: {
 
-    	weelsTypeKey: {
-    		type:'integer',
-    		autoIncrement: true,
-    		unique: true,
-    		primaryKey: true
-    	},
+        weelsTypeKey: {
+            type: 'integer',
+            autoIncrement: true,
+            unique: true,
+            primaryKey: true
+        },
 
-		value: {
-			type: 'string',
-			required: true
-		}
+        value: {
+            type: 'string',
+            required: true
+        }
 
     }
 };

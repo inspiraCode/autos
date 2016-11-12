@@ -7,8 +7,51 @@
 
 module.exports = {
 
-  attributes: {
+    attributes: {
 
-  }
+        dealerEmploeeKey: {
+            type: 'integer',
+            autoIncrement: true,
+            unique: true,
+            primaryKey: true
+        },
+
+        emploeeName: {
+            type: 'string',
+            required: true
+        },
+
+        phoneOne: {
+            type: 'string'
+        },
+
+        phoneTwo: {
+            type: 'string'
+        },
+
+        emailOne: {
+            type: 'string'
+        },
+
+        emailTwo: {
+            type: 'string'
+        },
+
+        department: {
+            type: 'string'
+        },
+
+        //Associations:
+        dealer: {
+            model: 'dealer',
+            via: 'emploees'
+        },
+
+        offices: {
+            collection: 'dealerOffice',
+            via: 'emploees',
+            dominant: true
+        }
+
+    }
 };
-

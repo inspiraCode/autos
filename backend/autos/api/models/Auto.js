@@ -10,57 +10,61 @@ module.exports = {
     attributes: {
 
 
-    	autoKey: {
-    		type:'integer',
-    		autoIncrement: true,
-    		unique: true,
-    		primaryKey: true
-    	},
+        autoKey: {
+            type: 'integer',
+            autoIncrement: true,
+            unique: true,
+            primaryKey: true
+        },
 
-    	price: {
-    		type:'float',
-    		required: true
-    	},
+        price: {
+            type: 'float',
+            required: true
+        },
 
-    	cilindersQty: {
-    		type: 'integer',
-    		required: true
-    	},
+        cilindersQty: {
+            type: 'integer',
+            required: true
+        },
 
-    	serialNumber: {
-    		type:'string',
-    		required: true
-    	},
+        serialNumber: {
+            type: 'string',
+            required: true
+        },
 
-    	tiresSize: {
-    		type: 'integer'
-    	},
+        tiresSize: {
+            type: 'integer'
+        },
 
-    	sunroof: {
-    		type: 'boolean'
-    	},
+        sunroof: {
+            type: 'boolean'
+        },
 
-    	mat: {
-    		type: 'boolean'
-    	},
+        mat: {
+            type: 'boolean'
+        },
 
-    	doorsQty: {
-    		type: 'integer'
-    	},
+        doorsQty: {
+            type: 'integer'
+        },
 
-    	colorExterior: {
-    		type: 'string'
-    	},
+        colorExterior: {
+            type: 'string'
+        },
 
-    	colorInterior: {
-    		type: 'string'
-    	},
+        colorInterior: {
+            type: 'string'
+        },
 
-    	conditions: {
-    		type: 'string'
-    	},
+        conditions: {
+            type: 'string'
+        },
 
-    	
+        //Associations:
+        dealer: {
+            model: 'dealer',
+            via: 'autos'
+        }
 
 
 
