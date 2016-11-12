@@ -77,8 +77,8 @@ Entities:
   
   userProfile:
     Required:
-      ☐ userProfileKey
-      ☐ avatar
+      ✔ userProfileKey @done (16-10-17 21:22)
+      ✔ avatar @done (16-10-17 21:22)
     Optional:
   
   inventory:
